@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Run the Script') {
             steps {
-                scripts {
+                script {
                             sh '/opt/softwares/packer build /var/lib/jenkins/workspace/AMI_Packer_master/instance.json'
                 }
             }
